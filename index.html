@@ -1074,19 +1074,19 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
     // Initialize EmailJS
-    emailjs.init('4TWKi8mJwoFd-hFab'); // Replace with your EmailJS user ID
+    emailjs.init('sTHSW0847HsF9w0Qg'); // Replace with your EmailJS user ID
 
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
 
-        emailjs.sendForm('service_djtwy2e', 'template_hbbxc4i', this)
+        emailjs.sendForm('service_xds7utu', 'template_yut7igp', this)
             .then(function (response) {
                 console.log('Success:', response);
-                alert('Your message has been sent successfully!');
+                alert('Message has been sent successfully.');
                 document.getElementById('contact-form').reset();
             }, function (error) {
                 console.error('Error:', error);
-                alert('Failed to send your message. Please try again later.');
+                alert('Failed to send the message.');
             });
     });
 </script>
